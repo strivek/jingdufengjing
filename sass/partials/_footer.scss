@@ -1,0 +1,95 @@
+.g-foot {
+  height: 280px;
+  background-color: #f2f2f2;
+  font-family: '\5FAE\8F6F\96C5\9ED1';
+}
+.m-foot {
+  height: 252px;
+  .cols {
+    float: left;
+    padding-top: 30px;
+    width: 555px;
+    dl {
+      float: left;
+      width: 85px;
+      text-align: center;
+      dt {
+        height: 14px;
+        line-height: 14px;
+        font-size: 12px;
+        font-weight: bold;
+        color: #282828;
+        border-right: 1px solid #d5d5d5;
+        a {color: #282828;}
+        &.last {border: none 0;}
+      }
+      dd {
+        padding-top: 14px;
+        font-size: 12px;
+        a {
+          display: block;
+          line-height: 20px;
+          color: #838383;
+        }
+      }
+      a:hover {
+        color: #76161f;
+      }
+    }
+  }
+  .contact {
+    position: relative;
+    float: left;
+    padding-top: 33px;
+    width: 469px;
+    .con {
+      margin-bottom: 32px;
+      height: 80px;
+      overflow: hidden;
+      border-left: 1px solid #b48488;
+      color: #76161f;
+      a {color: #76161f;}
+      li {
+        margin-bottom: 13px;
+        padding-left: 49px;
+        height: 18px;
+        line-height: 18px;
+        font-size: 12px;
+        background-image: url("../images/icons.png");
+        background-repeat: no-repeat;
+        &.sina {background-position: 13px 2px;font-size: 16px;}
+        &.tel {background-position: 13px -19px;font-size: 16px;}
+        &.wechat {background-position: 13px -40px;font-size: 14px;}
+        &.address {background-position: 13px -58px;}
+        &.fax {background-position: 13px -77px;}
+        &.email {background-position: 13px -97px;}
+      }
+    }
+    .con-1 {
+      height: 73px;
+      border-left: 1px solid #909090;
+      color: #282828;
+      a {color: #282828;}
+      li {
+        margin-bottom: 10px;
+      }
+    }
+    .QRcode {
+      position: absolute;
+      top: 33px;
+      right: 57px;
+      width: 80px;
+      height: 80px;
+    }
+  }
+}
+.m-copyright {
+  height: 28px;
+  line-height: 28px;
+  color: #fff;
+  background-color: #76161f;
+  span {
+    float: right;
+    font-size: 12px;
+  }
+}

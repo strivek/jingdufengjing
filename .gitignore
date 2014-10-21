@@ -7,6 +7,8 @@
 .metadata
 bin/
 tmp/
+*.css
+*.css.map
 *.tmp
 *.bak
 *.swp
@@ -215,3 +217,5 @@ pip-log.txt
 
 #Mr Developer
 .mr.developer.cfg
+web/css/main.css.map
+web/css/main.css
