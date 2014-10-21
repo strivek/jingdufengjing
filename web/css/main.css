@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* reset */
 html, body, h1, h2, h3, h4, h5, h6, div, dl, dt, dd, ul, ol, li, p, blockquote, pre, hr, figure, table, caption, th, td, form, fieldset, legend, input, button, textarea, menu {
   margin: 0;
@@ -64,5 +65,303 @@ body {
 
 a, a:hover {
   color: #333; }
+
+.header {
+  width: 100%; }
+  .header:after, .header:before {
+    display: table;
+    content: ""; }
+  .header:after {
+    clear: both; }
+  .header .left {
+    float: left;
+    width: 50%;
+    height: 65px;
+    background: #75181e; }
+    .header .left .logo {
+      display: block;
+      float: right;
+      margin-right: 218px; }
+      .header .left .logo img {
+        margin-top: 18px; }
+  .header .right {
+    float: left;
+    width: 50%;
+    position: relative;
+    background: #fff;
+    height: 65px; }
+    .header .right .nav {
+      position: absolute;
+      top: 0;
+      left: -208px;
+      height: 65px;
+      background: #fff; }
+      .header .right .nav:after, .header .right .nav:before {
+        display: table;
+        content: ""; }
+      .header .right .nav:after {
+        clear: both; }
+      .header .right .nav > li {
+        margin-left: -1px;
+        float: left;
+        position: relative; }
+        .header .right .nav > li .link {
+          padding-top: 36px;
+          display: block;
+          height: 29px; }
+          .header .right .nav > li .link a {
+            display: block;
+            padding: 2px 24px;
+            border-left: 1px solid #995259;
+            font-size: 14px;
+            font-family: "微软雅黑";
+            /*font-weight: bold;*/ }
+          .header .right .nav > li .link:hover {
+            border-bottom: 2px solid #76161f;
+            height: 27px; }
+            .header .right .nav > li .link:hover a {
+              color: #76161f; }
+        .header .right .nav > li .list {
+          position: absolute;
+          left: 0;
+          display: none;
+          z-index: 100;
+          width: 100%; }
+          .header .right .nav > li .list li {
+            display: block; }
+            .header .right .nav > li .list li a {
+              display: block;
+              width: 100%;
+              height: 24px;
+              line-height: 24px;
+              text-align: center;
+              font-size: 12px;
+              font-family: "微软雅黑regular";
+              background: #f2f2f2; }
+              .header .right .nav > li .list li a:hover {
+                background: #74181d;
+                color: #fff; }
+
+.m-main-chy .con {
+  margin: 0 auto;
+  width: 1024px; }
+  .m-main-chy .con .imglb {
+    position: relative;
+    width: 100%;
+    height: 300px;
+    overflow: hidden; }
+    .m-main-chy .con .imglb .items {
+      position: absolute;
+      float: left; }
+      .m-main-chy .con .imglb .items li {
+        float: left; }
+        .m-main-chy .con .imglb .items li img {
+          width: 100%;
+          height: 300px;
+          display: block; }
+    .m-main-chy .con .imglb .tips {
+      position: absolute;
+      bottom: 0px;
+      width: 100%;
+      height: 20px;
+      overflow: hidden; }
+      .m-main-chy .con .imglb .tips .nums {
+        text-align: center;
+        height: 100%; }
+        .m-main-chy .con .imglb .tips .nums a {
+          display: inline-block;
+          width: 12px;
+          height: 12px;
+          border-radius: 6px;
+          -webkit-border-radius: 6px;
+          -moz-border-radius: 6px;
+          text-indent: -99999px;
+          margin: 0px 4px 0px 0px;
+          background: #c6bda7; }
+        .m-main-chy .con .imglb .tips .nums .active {
+          background: #76161f; }
+  .m-main-chy .con .mLink {
+    padding-top: 32px; }
+    .m-main-chy .con .mLink .linkTab {
+      display: block; }
+      .m-main-chy .con .mLink .linkTab tbody {
+        display: block; }
+        .m-main-chy .con .mLink .linkTab tbody tr {
+          display: block;
+          margin-top: -1px; }
+          .m-main-chy .con .mLink .linkTab tbody tr td {
+            width: 1%;
+            border: 1px solid #000; }
+            .m-main-chy .con .mLink .linkTab tbody tr td:hover {
+              background: #751b1d; }
+              .m-main-chy .con .mLink .linkTab tbody tr td:hover a {
+                color: #fff; }
+            .m-main-chy .con .mLink .linkTab tbody tr td a {
+              display: block;
+              text-align: center;
+              height: 48px;
+              line-height: 48px;
+              font-size: 18px;
+              color: #313131;
+              font-family: "微软雅黑regular"; }
+  .m-main-chy .con .heng {
+    margin-top: 32px;
+    width: 100%;
+    height: 5px;
+    background: #76161f; }
+  .m-main-chy .con .heart {
+    margin-top: 32px; }
+    .m-main-chy .con .heart:after, .m-main-chy .con .heart:before {
+      display: table;
+      content: ""; }
+    .m-main-chy .con .heart:after {
+      clear: both; }
+    .m-main-chy .con .heart .left {
+      float: left;
+      width: 504px;
+      margin-right: 16px; }
+      .m-main-chy .con .heart .left .title {
+        position: relative;
+        padding-bottom: 8px;
+        border-bottom: 1px solid #2b2b2b; }
+        .m-main-chy .con .heart .left .title p {
+          font-size: 18px;
+          color: #313131;
+          font-family: "微软雅黑regular";
+          font-weight: bold; }
+        .m-main-chy .con .heart .left .title a {
+          position: absolute;
+          right: 0;
+          bottom: 8px;
+          font-size: 12px;
+          font-weight: bold;
+          color: #76161f; }
+      .m-main-chy .con .heart .left .list {
+        margin-top: 32px;
+        position: relative; }
+        .m-main-chy .con .heart .left .list:after, .m-main-chy .con .heart .left .list:before {
+          display: table;
+          content: ""; }
+        .m-main-chy .con .heart .left .list:after {
+          clear: both; }
+        .m-main-chy .con .heart .left .list .items {
+          position: absolute;
+          float: left; }
+          .m-main-chy .con .heart .left .list .items li {
+            float: left;
+            margin-right: -16px; }
+            .m-main-chy .con .heart .left .list .items li .leader {
+              float: left;
+              margin-right: 16px;
+              width: 244px; }
+              .m-main-chy .con .heart .left .list .items li .leader img {
+                display: block;
+                width: 244px;
+                height: 212px; }
+              .m-main-chy .con .heart .left .list .items li .leader a {
+                display: block;
+                padding: 16px;
+                background: #f2f2f2; }
+                .m-main-chy .con .heart .left .list .items li .leader a .name {
+                  display: block;
+                  font-size: 16px;
+                  color: #282828;
+                  font-family: "微软雅黑"; }
+                  .m-main-chy .con .heart .left .list .items li .leader a .name .duty {
+                    display: inline-block;
+                    margin-left: 6px;
+                    font-size: 14px; }
+                .m-main-chy .con .heart .left .list .items li .leader a .des {
+                  display: block;
+                  margin-top: 6px;
+                  font-size: 12px;
+                  color: #4b4b4b;
+                  line-height: 16px;
+                  font-family: "微软雅黑 light"; }
+                .m-main-chy .con .heart .left .list .items li .leader a:hover {
+                  background: #75181e; }
+                  .m-main-chy .con .heart .left .list .items li .leader a:hover .name, .m-main-chy .con .heart .left .list .items li .leader a:hover .des {
+                    color: #fff; }
+        .m-main-chy .con .heart .left .list .toLeft, .m-main-chy .con .heart .left .list .toRight {
+          z-index: 100;
+          width: 32px;
+          height: 32px;
+          position: absolute;
+          display: block;
+          background: #76161f; }
+    .m-main-chy .con .heart .right {
+      float: right;
+      width: 504px; }
+      .m-main-chy .con .heart .right .title {
+        position: relative;
+        padding-bottom: 8px;
+        border-bottom: 1px solid #2b2b2b; }
+        .m-main-chy .con .heart .right .title p {
+          font-size: 18px;
+          color: #313131;
+          font-family: "微软雅黑regular";
+          font-weight: bold; }
+        .m-main-chy .con .heart .right .title a {
+          position: absolute;
+          right: 0;
+          bottom: 8px;
+          font-size: 12px;
+          font-weight: bold;
+          color: #76161f; }
+      .m-main-chy .con .heart .right .jState {
+        margin-top: 32px; }
+        .m-main-chy .con .heart .right .jState:after, .m-main-chy .con .heart .right .jState:before {
+          display: table;
+          content: ""; }
+        .m-main-chy .con .heart .right .jState:after {
+          clear: both; }
+        .m-main-chy .con .heart .right .jState .img {
+          float: left; }
+          .m-main-chy .con .heart .right .jState .img img {
+            width: 176px;
+            height: 152px; }
+        .m-main-chy .con .heart .right .jState .des {
+          float: left;
+          padding: 16px 8px 16px 16px;
+          height: 120px;
+          width: 304px;
+          background: #74181d; }
+          .m-main-chy .con .heart .right .jState .des .aTitle a {
+            font-size: 12px;
+            font-family: "微软雅黑";
+            font-weight: bold;
+            color: #fff;
+            letter-spacing: 2px; }
+          .m-main-chy .con .heart .right .jState .des .time {
+            margin-top: 8px;
+            text-align: right;
+            color: #fff;
+            font-size: 10px; }
+          .m-main-chy .con .heart .right .jState .des .con {
+            margin-top: 6px;
+            color: #fff;
+            line-height: 18px;
+            width: 304px; }
+      .m-main-chy .con .heart .right .stateList {
+        margin-top: 16px;
+        margin-bottom: 100px; }
+        .m-main-chy .con .heart .right .stateList li {
+          margin-top: 16px;
+          position: relative; }
+          .m-main-chy .con .heart .right .stateList li a {
+            padding-left: 14px;
+            background: url("../images/list-icon.png") 0 5px no-repeat;
+            color: #6c6c6c;
+            font-size: 12px;
+            font-family: "微软雅黑"; }
+          .m-main-chy .con .heart .right .stateList li span {
+            position: absolute;
+            right: 1px;
+            top: 0; }
+          .m-main-chy .con .heart .right .stateList li:hover a {
+            color: #76161f;
+            background-position: 0 -14px; }
+          .m-main-chy .con .heart .right .stateList li:hover span {
+            color: #76161f; }
 
 /*# sourceMappingURL=main.css.map */
