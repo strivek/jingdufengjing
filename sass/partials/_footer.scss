@@ -21,10 +21,11 @@
         color: #282828;
         border-right: 1px solid #d5d5d5;
         a {color: #282828;}
+        &.last {border: none 0;}
       }
       dd {
         padding-top: 14px;
-        font-size: 10px;
+        font-size: 12px;
         a {
           display: block;
           line-height: 20px;
@@ -85,11 +86,10 @@
 .m-copyright {
   height: 28px;
   line-height: 28px;
-  font-size: 10px;
   color: #fff;
   background-color: #76161f;
   span {
-    padding-left: 68px;
+    float: right;
     font-size: 12px;
   }
 }
