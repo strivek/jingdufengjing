@@ -1,5 +1,8 @@
 //body background
-body {background: url("../images/repeat-bg.jpg") repeat 0 0;}
+body {
+  background: url("../images/repeat-bg.jpg") repeat 0 0;
+  font-family: '\5FAE\8F6F\96C5\9ED1';
+}
 //colors
 $basered:#76161f;
 $title:#313131;
@@ -44,4 +47,39 @@ $title:#313131;
 }
 .u-editor {
   height: 400px;
+}
+.u-load {
+  position: relative;
+  display: block;
+  margin-top: 8px;
+  margin-bottom: 32px;
+  height: 48px;
+  line-height: 48px;
+  text-align: center;
+  font-size: 14px;
+  font-weight: bold;
+  color: $title;
+  background-color: #f2f2f2;
+  cursor: pointer;
+  i {
+    position: absolute;
+    top: 17px;
+    left: 533px;
+    width: 13px;
+    height: 13px;
+    background-image: url("../images/icons.png");
+    background-repeat: no-repeat;
+    background-position: -5px -260px;
+  }
+  &:hover {
+    background-color: $basered;
+    color: #fff;
+    i {background-position: -5px -275px;}
+  }
+  &.u-load-h {
+    i {background-position: -5px -290px;}
+    &:hover {
+      i {background-position: -5px -305px;}
+    }
+  }
 }

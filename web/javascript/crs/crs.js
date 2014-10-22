@@ -121,6 +121,5 @@ define(['jquery'], function ($) {
             init();
         }
         imgLoader.src = firstPic.attr('src');
-
     };
 });

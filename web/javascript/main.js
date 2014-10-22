@@ -1,6 +1,6 @@
 require.config({
     baseUrl: "javascript",
-    packages: ["showLink","crs"],
+    packages: ["showLink","crs","bigman"],
     paths: {
         jquery: 'lib/jquery.min'
     }
@@ -8,3 +8,4 @@ require.config({
 
 require(['showLink']);
 require(['crs']);
+require(['bigman']);
