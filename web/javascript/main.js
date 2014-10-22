@@ -1,6 +1,6 @@
 require.config({
     baseUrl: "javascript",
-    packages: ["showLink","crs","bigman"],
+    packages: ["showLink","crs","bigman","jScrollPane"],
     paths: {
         jquery: 'lib/jquery.min'
     }
@@ -9,3 +9,4 @@ require.config({
 require(['showLink']);
 require(['crs']);
 require(['bigman']);
+require(['jScrollPane']);

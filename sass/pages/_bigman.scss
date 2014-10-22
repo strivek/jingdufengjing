@@ -72,7 +72,8 @@
     .box {
       position: absolute;
       left: 203px;
-      padding: 32px;
+      display: none;
+      padding: 32px 0 32px 32px;
       background-color: #f2f2f2;
       .avatar {
         float: left;
@@ -81,6 +82,10 @@
       .content {
         margin-left: 312px;
         color: $title;
+        .scroll-pane {
+          height: 300px;
+          overflow: auto;
+        }
         .name {
           display: block;
           height: 36px;
