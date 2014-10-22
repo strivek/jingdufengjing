@@ -27,7 +27,7 @@
         .nums {
           text-align: center;
           height: 100%;
-          a {
+          span {
             display: inline-block;
             width: 12px;
             height: 12px;
@@ -38,11 +38,15 @@
             margin: 0px 4px 0px 0px;
             background: #c6bda7;
           }
-          .active {
-                background: #76161f;
-          }
+          .on {background: #76161f; }
         }
       }
+
+      .toLeft,.toRight{position: absolute;top:50%;margin-top:-16px;background: #745036; width: 32px;height:32px;line-height: 32px; z-index:103; cursor:pointer; color:#fff; font-size:22px; text-align: center;
+        &:hover{background:#76161f; }
+      }
+      .toLeft{ left:10px;  }
+      .toRight{right:10px;}
     }
     .mLink{padding-top: 32px;
       .linkTab {display: block;
@@ -58,30 +62,24 @@
     }
     .heng{margin-top:32px;width: 100%; height: 5px; background: #76161f;}
     .heart{margin-top: 32px;
-      &:after, &:before {
-        display: table;
-        content: "";
-      }
-      &:after {
-        clear: both;
-      }
-      .left{float:left;width:504px;margin-right: 16px;
+      &:after, &:before {display: table;content: "";}
+      &:after {clear: both;}
+      .left{
+        &:after, &:before { display: table;content: "";}
+        &:after {clear: both;}
+        float:left;width:504px;margin-right: 16px;
         .title{position:relative;padding-bottom: 8px; border-bottom: 1px solid #2b2b2b;
           p{font-size: 18px; color:#313131; font-family: "微软雅黑regular"; font-weight: bold;}
           a{position: absolute; right:0; bottom:8px; font-size:12px; font-weight: bold;color:#76161f;}
         }
-        .list{margin-top: 32px;position: relative;
-          &:after, &:before {
-          display: table;
-          content: "";
-        }
-          &:after {
-            clear: both;
-          }
-        .items{position: absolute;float: left;
+        .clist{margin-top: 32px;position: relative;height:296px;overflow:hidden;width:100%;
+
+            .items{float: left;margin-right:-16px;
+          &:after, &:before {display: table;content: "";}
+          &:after {clear: both;}
           li{float: left;
-            margin-right:-16px;
-             .leader{float:left;margin-right:16px;width:244px;
+            margin-right:16px;
+             .leader{float:left;width:244px;
 
                img{display: block; width:244px;height: 212px;}
                a{ display:block; padding: 16px;background: #f2f2f2;
@@ -94,9 +92,24 @@
              }
           }
          }
-          .toLeft,.toRight{z-index: 100;width: 32px; height: 32px; position:absolute;display: block;background:#76161f;  }
-        }
+        /*  .toLeft,.toRight{position: absolute;top:50%;margin-top:-16px;background: #333;filter:alpha(opacity=60);opacity: 0.6; width: 32px;height:32px;line-height: 32px; z-index:103; cursor:pointer; color:#fff; font-size:22px; text-align: center;
+            &:hover{background:#76161f;filter:alpha(opacity=100);opacity: 1; }
+          }
+          .toLeft{ left:0px;  }
+          .toRight{right:0px;}*/
 
+        }
+        .flex-viewport {max-height: 2000px;}
+        .flex-direction-nav {*height: 0;
+       a  {
+         position: absolute;top:50%;margin-top:-16px;background: #333;opacity: 0.6; width: 32px;height:32px;line-height: 32px; z-index:103; cursor:pointer; color:#fff; font-size:22px; text-align: center;
+       }
+
+         .flex-prev {opacity: 1;  left:0px; }
+        .flex-next {opacity: 1; right:0px;}
+     .flex-next:hover,.flex-prev:hover { opacity: 1;background:#76161f;  }
+         .flex-disabled { opacity: 0!important; filter:alpha(opacity=0); cursor: default; }
+        }
       }
       .right{
         float: right;
@@ -135,3 +148,17 @@
     }
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
