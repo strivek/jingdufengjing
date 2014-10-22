@@ -66,6 +66,101 @@ body {
 a, a:hover {
   color: #333; }
 
+.g-foot {
+  height: 280px;
+  background-color: #f2f2f2;
+  font-family: '\5FAE\8F6F\96C5\9ED1'; }
+
+.m-foot {
+  height: 252px; }
+  .m-foot .cols {
+    float: left;
+    padding-top: 30px;
+    width: 555px; }
+    .m-foot .cols dl {
+      float: left;
+      width: 85px;
+      text-align: center; }
+      .m-foot .cols dl dt {
+        height: 14px;
+        line-height: 14px;
+        font-size: 12px;
+        font-weight: bold;
+        color: #282828;
+        border-right: 1px solid #d5d5d5; }
+        .m-foot .cols dl dt a {
+          color: #282828; }
+        .m-foot .cols dl dt.last {
+          border: none 0; }
+      .m-foot .cols dl dd {
+        padding-top: 14px;
+        font-size: 12px; }
+        .m-foot .cols dl dd a {
+          display: block;
+          line-height: 20px;
+          color: #838383; }
+      .m-foot .cols dl a:hover {
+        color: #76161f; }
+  .m-foot .contact {
+    position: relative;
+    float: left;
+    padding-top: 33px;
+    width: 469px; }
+    .m-foot .contact .con {
+      margin-bottom: 32px;
+      height: 80px;
+      overflow: hidden;
+      border-left: 1px solid #b48488;
+      color: #76161f; }
+      .m-foot .contact .con a {
+        color: #76161f; }
+      .m-foot .contact .con li {
+        margin-bottom: 13px;
+        padding-left: 49px;
+        height: 18px;
+        line-height: 18px;
+        font-size: 12px;
+        background-image: url("../images/icons.png");
+        background-repeat: no-repeat; }
+        .m-foot .contact .con li.sina {
+          background-position: 13px 2px;
+          font-size: 16px; }
+        .m-foot .contact .con li.tel {
+          background-position: 13px -19px;
+          font-size: 16px; }
+        .m-foot .contact .con li.wechat {
+          background-position: 13px -40px;
+          font-size: 14px; }
+        .m-foot .contact .con li.address {
+          background-position: 13px -58px; }
+        .m-foot .contact .con li.fax {
+          background-position: 13px -77px; }
+        .m-foot .contact .con li.email {
+          background-position: 13px -97px; }
+    .m-foot .contact .con-1 {
+      height: 73px;
+      border-left: 1px solid #909090;
+      color: #282828; }
+      .m-foot .contact .con-1 a {
+        color: #282828; }
+      .m-foot .contact .con-1 li {
+        margin-bottom: 10px; }
+    .m-foot .contact .QRcode {
+      position: absolute;
+      top: 33px;
+      right: 57px;
+      width: 80px;
+      height: 80px; }
+
+.m-copyright {
+  height: 28px;
+  line-height: 28px;
+  color: #fff;
+  background-color: #76161f; }
+  .m-copyright span {
+    float: right;
+    font-size: 12px; }
+
 .header {
   width: 100%; }
   .header:after, .header:before {
@@ -141,6 +236,53 @@ a, a:hover {
               .header .right .nav > li .list li a:hover {
                 background: #74181d;
                 color: #fff; }
+
+.f-cb:after {
+  display: block;
+  clear: both;
+  visibility: hidden;
+  height: 0;
+  overflow: hidden;
+  content: "."; }
+
+.f-cb {
+  zoom: 1; }
+
+.f-m0a {
+  margin: 0 auto;
+  width: 1024px; }
+
+.u-back {
+  position: relative;
+  height: 26px; }
+  .u-back a {
+    position: absolute;
+    right: 0;
+    display: block;
+    width: 65px;
+    height: 26px;
+    line-height: 26px;
+    text-align: center;
+    font-size: 14px;
+    color: #fff;
+    background-color: #76161f; }
+
+.u-title {
+  position: relative;
+  height: 36px;
+  vertical-align: top;
+  font-size: 18px;
+  border-bottom: 1px solid #a1a1a1;
+  color: #313131; }
+  .u-title .more {
+    position: absolute;
+    bottom: 14px;
+    right: 0;
+    font-size: 12px;
+    font-weight: bold; }
+
+.u-editor {
+  height: 400px; }
 
 .m-main-chy .con {
   margin: 0 auto;
@@ -363,5 +505,166 @@ a, a:hover {
             background-position: 0 -14px; }
           .m-main-chy .con .heart .right .stateList li:hover span {
             color: #76161f; }
+
+.g-bf {
+  padding-top: 100px;
+  padding-bottom: 68px;
+  font-family: '\5FAE\8F6F\96C5\9ED1'; }
+
+.g-bfcontent {
+  padding-top: 48px;
+  padding-bottom: 100px;
+  font-family: '\5FAE\8F6F\96C5\9ED1'; }
+
+.g-list {
+  padding-bottom: 100px;
+  font-family: '\5FAE\8F6F\96C5\9ED1'; }
+
+.g-bigman {
+  padding-top: 48px;
+  padding-bottom: 100px;
+  font-family: '\5FAE\8F6F\96C5\9ED1'; }
+
+.m-imgtextlist {
+  margin-left: -16px; }
+  .m-imgtextlist .item {
+    float: left;
+    margin: 0 0 32px 16px;
+    width: 504px;
+    height: 200px;
+    background-color: #e8e8e8; }
+    .m-imgtextlist .item img {
+      float: left;
+      width: 264px; }
+    .m-imgtextlist .item .text {
+      position: relative;
+      margin-left: 270px;
+      padding-top: 30px;
+      padding-right: 10px;
+      height: 170px; }
+      .m-imgtextlist .item .text h1 {
+        margin-bottom: 8px;
+        font-size: 24px;
+        font-weight: normal;
+        line-height: 30px;
+        color: #494949; }
+      .m-imgtextlist .item .text p {
+        font-size: 14px;
+        line-height: 18px;
+        color: #767676; }
+      .m-imgtextlist .item .text span {
+        position: absolute;
+        bottom: 16px;
+        right: 16px;
+        width: 8px;
+        height: 13px;
+        background-image: url("../images/icons.png");
+        background-position: -7px -120px; }
+    .m-imgtextlist .item:hover {
+      background-color: #76161f; }
+      .m-imgtextlist .item:hover .text {
+        margin-left: 262px; }
+      .m-imgtextlist .item:hover img {
+        margin: 12px;
+        width: 232px; }
+      .m-imgtextlist .item:hover h1 {
+        color: #fff; }
+      .m-imgtextlist .item:hover p {
+        color: #e8e8e8; }
+      .m-imgtextlist .item:hover span {
+        background-position: -7px -140px; }
+
+.m-imgtextlist1 .content {
+  padding: 32px 0;
+  margin-left: -16px; }
+  .m-imgtextlist1 .content .item {
+    float: left;
+    margin-left: 16px;
+    width: 244px;
+    height: 350px;
+    font-size: 14px;
+    color: #313131;
+    background-color: #f3f3f3; }
+    .m-imgtextlist1 .content .item .text {
+      padding: 16px;
+      line-height: 18px; }
+    .m-imgtextlist1 .content .item:hover {
+      background-color: #76161f;
+      color: #fff; }
+  .m-imgtextlist1 .content.f-cb {
+    margin-left: -16px; }
+
+.m-imgtextlist1-1 .content {
+  margin-left: -8px; }
+  .m-imgtextlist1-1 .content .item {
+    position: relative;
+    margin-left: 8px;
+    margin-bottom: 16px;
+    width: 336px;
+    height: 208px;
+    color: #fff; }
+    .m-imgtextlist1-1 .content .item .text, .m-imgtextlist1-1 .content .item .text-bg {
+      position: absolute;
+      bottom: 0;
+      display: none;
+      padding: 0;
+      width: 100%;
+      height: 44px;
+      line-height: 44px;
+      text-align: center; }
+    .m-imgtextlist1-1 .content .item:hover .text {
+      display: block;
+      height: 44px;
+      line-height: 44px;
+      color: #fff; }
+    .m-imgtextlist1-1 .content .item:hover .text-bg {
+      display: block;
+      background-color: #76161f;
+      opacity: .6; }
+  .m-imgtextlist1-1 .content.f-cb {
+    margin-left: -8px; }
+
+.m-linklist {
+  margin-bottom: 32px;
+  padding: 32px;
+  background-color: #f2f2f2; }
+  .m-linklist .title {
+    height: 36px;
+    vertical-align: top;
+    font-size: 14px;
+    font-weight: bold;
+    color: #313131;
+    border-bottom: 1px solid #dcdbda; }
+  .m-linklist .content .link {
+    display: block;
+    padding: 0 8px;
+    height: 32px;
+    line-height: 32px;
+    color: #231815;
+    font-size: 12px;
+    border-bottom: 1px solid #dcdbda; }
+    .m-linklist .content .link span {
+      float: right; }
+    .m-linklist .content .link:hover {
+      background-color: #76161f;
+      color: #fff; }
+
+.m-linklist-1 {
+  margin-bottom: 0;
+  padding: 0;
+  background-color: transparent; }
+  .m-linklist-1 .content {
+    padding: 32px 0; }
+    .m-linklist-1 .content .link {
+      height: 48px;
+      line-height: 48px;
+      font-size: 14px; }
+      .m-linklist-1 .content .link span {
+        width: 80px;
+        background-image: url("../images/icons.png");
+        background-repeat: no-repeat;
+        background-position: 60px -162px; }
+      .m-linklist-1 .content .link:hover span {
+        background-position: 60px -212px; }
 
 /*# sourceMappingURL=main.css.map */

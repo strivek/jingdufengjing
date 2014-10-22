@@ -1,0 +1,53 @@
+.m-linklist {
+  margin-bottom: 32px;
+  padding: 32px;
+  background-color: #f2f2f2;
+  .title {
+    height: 36px;
+    vertical-align: top;
+    font-size: 14px;
+    font-weight: bold;
+    color: #313131;
+    border-bottom: 1px solid #dcdbda;
+  }
+  .content {
+    .link {
+      display: block;
+      padding: 0 8px;
+      height: 32px;
+      line-height: 32px;
+      color: #231815;
+      font-size: 12px;
+      border-bottom: 1px solid #dcdbda;
+      span {
+        float: right;
+      }
+      &:hover {
+        background-color: $basered;
+        color: #fff;
+      }
+    }
+  }
+}
+.m-linklist-1 {
+  margin-bottom: 0;
+  padding: 0;
+  background-color: transparent;
+  .content {
+    padding: 32px 0;
+    .link {
+      height: 48px;
+      line-height: 48px;
+      font-size: 14px;
+      span {
+        width: 80px;
+        background-image: url("../images/icons.png");
+        background-repeat: no-repeat;
+        background-position: 60px -162px;
+      }
+      &:hover {
+        span {background-position: 60px -212px;}
+      }
+    }
+  }
+}
