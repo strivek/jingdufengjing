@@ -25,23 +25,24 @@
           width: 67px;
           height: 67px;
         }
-        .name {
+        .content {
           display: block;
-          margin-left: 80px;
-          padding: 16px 16px 16px 0;
+          margin-left: 95px;
+          padding: 23px 0 16px;
           height: 67px;
-          line-height: 67px;
-          font-size: 14px;
           color: $title;
+          .name {
+            font-size: 16px;
+            line-height: 32px;
+          }
           .duty {
-            padding-left: 4px;
             font-size: 12px;
           }
         }
         &.on,&:hover {
           width: 181px;
           background: url("../images/bm-a-on.png") no-repeat center center;
-          .name {
+          .content {
             color: #fff;
           }
         }
