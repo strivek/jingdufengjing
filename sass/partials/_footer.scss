@@ -20,7 +20,11 @@
         font-weight: bold;
         color: #282828;
         border-right: 1px solid #d5d5d5;
-        a {color: #282828;}
+        a {
+          margin-left: 2px;
+          letter-spacing: 1px;
+          color: #282828;
+        }
         &.last {border: none 0;}
       }
       dd {

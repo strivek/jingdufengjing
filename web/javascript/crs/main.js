@@ -1,5 +1,4 @@
 require(['jquery'], function ($) {
-    $(function () {
         $(function() {
             var sWidth = $("#crs").width(); //获取焦点图的宽度（显示面积）
             var len = $("#crs ul li").length; //获取焦点图个数
@@ -55,7 +54,7 @@ require(['jquery'], function ($) {
                $("#crs .nums span").removeClass("on").eq(index).addClass("on"); //为当前的按钮切换到选中的效果
             }
         });
-    })
+
 });
 
 
