@@ -1,5 +1,118 @@
 .g-bigman {
   padding-top: 48px;
   padding-bottom: 100px;
-  font-family: '\5FAE\8F6F\96C5\9ED1';
+}
+.m-bigman {
+  .slide {
+    position: relative;
+    margin: 32px 0;
+    height: 399px;
+    overflow: hidden;
+    background-color: #f2f2f2;
+    .btn {
+      position: absolute;
+      top: -1px;
+      width: 181px;
+      li {
+        margin-top: 1px;
+        width: 171px;
+        height: 99px;
+        background-color: #d9d9d9;
+        cursor: pointer;
+        .avatar {
+          float: left;
+          margin: 16px 12px 16px 16px;
+          width: 67px;
+          height: 67px;
+        }
+        .content {
+          display: block;
+          margin-left: 95px;
+          padding: 23px 0 16px;
+          height: 67px;
+          color: $title;
+          .name {
+            font-size: 16px;
+            line-height: 32px;
+          }
+          .duty {
+            font-size: 12px;
+          }
+        }
+        &.on,&:hover {
+          width: 181px;
+          background: url("../images/bm-a-on.png") no-repeat center center;
+          .content {
+            color: #fff;
+          }
+        }
+      }
+    }
+    .up,.down {
+      position: absolute;
+      left: 70px;
+      z-index: 999;
+      display: block;
+      width: 32px;
+      height: 32px;
+      background-color: black;
+      background-image: url("../images/icons.png");
+      background-repeat: no-repeat;
+      opacity: .3;
+      filter:alpha(opacity=30);
+      cursor: pointer;
+    }
+    .up {
+      top: 0;
+      background-position: 0 -352px;
+    }
+    .down {
+      top: 368px;
+      background-position: 0 -320px;
+    }
+    .box {
+      position: absolute;
+      left: 203px;
+      display: none;
+      padding: 32px 0 32px 32px;
+      background-color: #f2f2f2;
+      .avatar {
+        float: left;
+        margin-right: 32px;
+      }
+      .content {
+        margin-left: 312px;
+        color: $title;
+        .scroll-pane {
+          height: 300px;
+          overflow: auto;
+        }
+        .name {
+          display: block;
+          height: 36px;
+          font-size: 24px;
+          font-weight: normal;
+          .duty {
+            padding-left: 8px;
+            font-size: 18px;
+          }
+        }
+        h2 {
+          font-size: 14px;
+          font-weight: normal;
+        }
+        p {
+          font-size: 12px;
+          line-height: 20px;
+        }
+        .line {
+          display: block;
+          margin: 18px 0 13px;
+          width: 32px;
+          height: 1px;
+          background-color: $basered;
+        }
+      }
+    }
+  }
 }
