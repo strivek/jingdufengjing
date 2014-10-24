@@ -13,8 +13,7 @@ body{background: url(../images/bg.png) repeat;}
         float: left;
         li {
           float: left;
-          img {
-            width: 100%;
+          img { width: 1024px;
             height: 300px;
             display: block;
           }
@@ -45,7 +44,7 @@ body{background: url(../images/bg.png) repeat;}
       }
 
       .toLeft,.toRight{position: absolute;top:50%;margin-top:-16px;background: #745036;filter:alpha(opacity=60);opacity: 0.6;
-        width: 32px;height:32px;line-height: 32px; z-index:103; cursor:pointer; color:#fff; font-size:22px; text-align: center;
+        width: 32px;height:32px;line-height: 28px; z-index:103; cursor:pointer; color:#fff; font-size:22px; text-align: center;
         -webkit-transition: all 1s;
         -moz-transition: all 1s;
         -ms-transition: all 1s;
@@ -118,7 +117,7 @@ body{background: url(../images/bg.png) repeat;}
         .flex-viewport {max-height: 2000px;}
         .flex-direction-nav {*height: 0;
        a  {
-         position: absolute;top:50%;margin-top:-16px;background: #333; width: 32px;height:32px;line-height: 32px; z-index:103; cursor:pointer;
+         position: absolute;top:50%;margin-top:-16px;background: #333; width: 32px;height:32px;line-height: 28px; z-index:103; cursor:pointer;
          color:#fff; font-size:22px; text-align: center;opacity:0.5;filter:alpha(opacity=50);
          -webkit-transition: all 0.5s;
          -moz-transition: all 0.5s;
@@ -169,17 +168,17 @@ body{background: url(../images/bg.png) repeat;}
         .des{float:left;padding:16px 8px 16px 16px;height:120px; width:304px;background: #f2f2f2;color:#313131;
           .aTitle a{font-size:12px; font-family: "微软雅黑"; font-weight: bold; color:#313131;letter-spacing:2px;}
           .time{margin-top: 8px; text-align: right;font-size:10px;}
-          .con{margin-top:6px;line-height: 18px;width: 304px;}
+          .con{margin-top:6px;line-height: 18px;width: 304px; height: 50px; overflow: hidden;}
           &:hover{.aTitle a,.time,.con{color:#fff;} background: #75181e;}
         }
 
       }
         .stateList{margin-top:16px; margin-bottom: 100px;
-          li{margin-top:16px;position: relative;
-          a{padding-left:14px; background:url("../images/list-icon.png")0 5px no-repeat;color:#6c6c6c; font-size:12px; font-family: "微软雅黑"; }
-            span{position: absolute; right: 1px; top:0;}
+          li{margin-top:12px;position: relative;
+          a{padding-left:14px; width:406px; height: 14px;display: inline-block; overflow: hidden; background:url("../images/list-icon.png")0 3px no-repeat;color:#6c6c6c; font-size:12px; font-family: "微软雅黑"; }
+          span{position: absolute; right: 1px; top:0;}
             &:hover{
-              a{color:#76161f;background-position: 0 -14px;}
+              a{color:#76161f;background-position: 0 -16px;}
               span{color:#76161f;}
             }
           }
