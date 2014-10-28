@@ -26,8 +26,12 @@ $title:#313131;
     line-height: 26px;
     text-align: center;
     font-size: 14px;
-    color: #fff;
-    background-color: $basered;
+    color: $title;
+    background-color: #f2f2f2;
+    &:hover {
+      color: #fff;
+      background-color: $basered;
+    }
   }
 }
 .u-title {
