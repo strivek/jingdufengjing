@@ -1,10 +1,10 @@
 .g-foot {
-  height: 280px;
+  height: 334px;
   background-color: #f2f2f2;
   font-family: '\5FAE\8F6F\96C5\9ED1';
 }
 .m-foot {
-  height: 252px;
+  height: 306px;
   .cols {
     float: left;
     padding-top: 30px;
@@ -41,49 +41,90 @@
       }
     }
   }
-  .contact {
-    position: relative;
+  .wechat {
     float: left;
-    padding-top: 33px;
-    width: 469px;
-    .con {
-      margin-bottom: 32px;
-      height: 80px;
-      overflow: hidden;
-      border-left: 1px solid #b48488;
-      color: #76161f;
-      a {color: #76161f;}
-      li {
-        margin-bottom: 13px;
-        padding-left: 49px;
-        height: 18px;
-        line-height: 18px;
-        font-size: 12px;
-        background-image: url("../images/icons.png");
-        background-repeat: no-repeat;
-        &.sina {background-position: 13px 2px;font-size: 16px;}
-        &.tel {background-position: 13px -19px;font-size: 16px;}
-        &.wechat {background-position: 13px -40px;font-size: 14px;}
-        &.address {background-position: 13px -58px;}
-        &.fax {background-position: 13px -77px;}
-        &.email {background-position: 13px -97px;}
+    padding: 32px 0 64px 122px;
+    width: 214px;
+    height: 104px;
+    color: $basered;
+    img {
+      float: left;
+    }
+    .text {
+      float: left;
+      padding-left: 10px;
+      width: 100px;
+      h2 {
+        padding: 8px 0;
+        width: 72px;
+        font-size: 18px;
+        font-weight: normal;
+        border-bottom: 1px solid $basered;
+        border-top: 1px solid $basered;
+      }
+      h3 {
+        padding: 8px 0;
+        font-size: 14px;
+        font-weight: normal;
       }
     }
-    .con-1 {
-      height: 73px;
-      border-left: 1px solid #909090;
-      color: #282828;
-      a {color: #282828;}
-      li {
-        margin-bottom: 10px;
-      }
+  }
+  .contact-1 {
+    padding-left: 255px;
+    height: 20px;
+    a {
+      float: left;
+      padding-left: 38px;
+      height: 18px;
+      line-height: 18px;
+      font-size: 18px;
+      color: $basered;
+      background-image: url("../images/icons.png");
+      background-repeat: no-repeat;
     }
-    .QRcode {
-      position: absolute;
-      top: 33px;
-      right: 57px;
-      width: 80px;
-      height: 80px;
+    i {
+      float: left;
+      margin: 0 20px;
+      width: 1px;
+      height: 20px;
+      background-color: #b48488;
+    }
+    .tel {
+      background-position: 0 -30px;
+      cursor: auto;
+    }
+    .weibo {
+      background-position: 0 0;
+    }
+  }
+  .contact-2 {
+    padding: 32px 0 40px 163px;
+    height: 14px;
+    span {
+      float: left;
+      padding-left: 32px;
+      height: 14px;
+      line-height: 14px;
+      font-size: 12px;
+      color: $title;
+      background-image: url("../images/icons.png");
+      background-repeat: no-repeat;
+    }
+    i {
+      float: left;
+      margin: 0 20px;
+      width: 1px;
+      height: 14px;
+      background-color: #909090;
+    }
+    .pos {
+      background-position: 0 -60px;
+    }
+    .fax {
+      background-position: 0 -80px;
+    }
+    .email {
+      background-position: 0 -100px;
     }
   }
 }
