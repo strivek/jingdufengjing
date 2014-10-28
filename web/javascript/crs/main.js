@@ -44,13 +44,13 @@ require(['jquery'], function ($) {
                     showPics(index);
                     index++;
                     if(index == len) {index = 0;}
-                },4000); //此4000代表自动播放的间隔，单位：毫秒
+                },8000); //此4000代表自动播放的间隔，单位：毫秒
             }).trigger("mouseleave");
 
             //显示图片函数，根据接收的index值显示相应的内容
             function showPics(index) { //普通切换
                 var nowLeft = -index*sWidth; //根据index值计算ul元素的left值
-                $("#crs ul").stop(true,false).animate({"left":nowLeft},300); //通过animate()调整ul元素滚动到计算出的position
+                $("#crs ul").stop(true,false).animate({"left":nowLeft},800); //通过animate()调整ul元素滚动到计算出的position
                $("#crs .nums span").removeClass("on").eq(index).addClass("on"); //为当前的按钮切换到选中的效果
             }
         });
