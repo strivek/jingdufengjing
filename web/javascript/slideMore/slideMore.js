@@ -16,7 +16,14 @@ define(['jquery'], function ($) {
             scrollTop,
             backTop = 0;
 
-        container.css({'overflow':'hidden','height':initHeight});
+        function init(){
+            if(itemLength < perLoad * initRow){
+                container.css('padding-bottom','32px');
+            }else{
+                $this.css('display','block');
+                container.css({'overflow':'hidden','height':initHeight});
+            }
+        }
 
         function main(){
             if(remainder){
@@ -75,6 +82,8 @@ define(['jquery'], function ($) {
                 $(document.body).animate({'scrollTop':'+='+itemHeight},500);
             }
         }
+
+        init();
 
         return this.each(function(){
             $this.on('click', function(){
