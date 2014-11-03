@@ -86,7 +86,6 @@ define(['jquery'], function ($) {
         return this.each(function(){
             $this.one('click', function(){
                 scrollTop = $(window).scrollTop();
-                console.log(scrollTop)
             }).click(function(){
                 main();
             })
