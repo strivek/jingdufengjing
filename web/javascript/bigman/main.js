@@ -3,11 +3,11 @@ require(['jquery'], function ($) {
             var btn = $('.m-bigman .btn li');
             var box = $('.m-bigman .box');
             var len = box.length;
-            box.eq(0).show();
+            box.eq(0).css('visibility','visible');
             btn.each(function (index) {
                 $(this).on('click', function () {
                     btn.removeClass('on').eq(index).addClass('on');
-                    box.hide().eq(index).fadeIn(500);
+                    box.hide().eq(index).css('visibility','visible').fadeIn(500);
                 })
             });
             if (len == 1){
