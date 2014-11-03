@@ -13,8 +13,7 @@ define(['jquery'], function ($) {
             loadHeight = opts.itemHeight * perLoad,
             remHeight = opts.itemHeight * remainder,
             initHeight = opts.initHeight,
-            scrollTop,
-            backTop = 0;
+            scrollTop;
 
         function init(){
             if(itemLength < perLoad * initRow){
@@ -69,8 +68,7 @@ define(['jquery'], function ($) {
             container.css({'overflow':'hidden','height':initHeight});
             $(document.body).animate({'scrollTop':scrollTop},500);
             $this.removeClass('u-load-h').find('span').text('展开');
-            times = itemLength / perLoad;
-            backTop = 0;
+            times = (itemLength / perLoad) - initRow + 1;
         }
 
         function slideRem(){
@@ -86,12 +84,11 @@ define(['jquery'], function ($) {
         init();
 
         return this.each(function(){
-            $this.on('click', function(){
+            $this.one('click', function(){
+                scrollTop = $(window).scrollTop();
+                console.log(scrollTop)
+            }).click(function(){
                 main();
-                backTop++;
-                if (backTop==1){
-                    scrollTop = $(window).scrollTop()
-                }
             })
         });
 
