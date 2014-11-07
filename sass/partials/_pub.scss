@@ -49,13 +49,24 @@ $title:#313131;
     font-weight: bold;
   }
 }
-.u-editor {
-  height: 400px;
+.u-title1 {
+  padding: 50px 0;
+  height: 46px;
+  h1 {
+    float: left;
+    margin-left: 28px;
+    font-size: 20px;
+    color: $basered;
+    line-height: 46px;
+    border-bottom: 1px solid #000;
+  }
 }
+.u-editor {}/*delete height*/
 .u-load {
   position: relative;
   display: none;
   margin-top: 8px;
+  margin-bottom: 32px;
   height: 48px;
   line-height: 48px;
   text-align: center;
