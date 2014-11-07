@@ -150,7 +150,7 @@ body{background: url(../images/bg.png) repeat;}
         }
       }
     }
-    }
+    }/*add 1106*/
 
     .heng{margin-top:32px;width: 100%; height: 5px; background: #76161f;}
     .heart{margin-top: 32px;
@@ -174,12 +174,15 @@ body{background: url(../images/bg.png) repeat;}
                img{display: block; width:244px;height: 212px;}
                a{ display:block; padding: 16px;background: #f2f2f2;
                  .name{display: block; font-size:16px; color:#282828; font-family: "微软雅黑";
-                 .duty{display:inline-block;margin-left:6px; font-size:14px;}
+                    .duty{display:inline-block;margin-left:6px; font-size:14px;}
                  }
                  .des{display:block;margin-top:6px;font-size:12px; color:#4b4b4b;line-height: 16px;font-family: "微软雅黑 light";}
-               .con{display:none;}
+                 .con{display:none;}
                  &:hover{background: #75181e; .name,.des{color:#fff;}}
                }
+               &:hover {
+                 a {background: #75181e; .name,.des{color:#fff;}}
+               }/*add 1107*/
              }
           }
          }
@@ -242,13 +245,14 @@ body{background: url(../images/bg.png) repeat;}
           clear: both;
         }
         .img{float: left;
-          img{width: 176px; height:152px;}}
+          img{display:block;/*add 1107*/width: 176px; height:152px;}}
         .des{float:left;padding:16px 8px 16px 16px;height:120px; width:304px;background: #f2f2f2;color:#313131;
           .aTitle a{font-size:12px; font-family: "微软雅黑"; font-weight: bold; color:#313131;letter-spacing:2px;}
           .time{margin-top: 8px; text-align: right;font-size:10px;}
           .con{margin-top:6px;line-height: 18px;width: 304px; height: 50px; overflow: hidden;}
           &:hover{.aTitle a,.time,.con{color:#fff;} background: #75181e;}
         }
+        &:hover{.aTitle a,.time,.con{color:#fff;} background: #75181e;.des{background: #75181e;}}/*jingxijun add 1107*/
 
       }
         .stateList{margin-top:16px; margin-bottom: 100px;

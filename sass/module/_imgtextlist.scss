@@ -66,11 +66,12 @@
 }
 .m-imgtextlist1 {
   .content {
-    padding: 32px 0;
+    padding: 32px 0 0;
     margin-left: -16px;
     .item {
       float: left;
       margin-left: 16px;
+      margin-bottom: 16px;
       width: 244px;
       height: 350px;
       font-size: 14px;
