@@ -86,3 +86,25 @@ $title:#313131;
     }
   }
 }
+.m-brand {
+  .bk-gray {
+    float: left;
+    width: 146px;
+    height: 140px;
+    background-color: #ededed;
+  }
+  h1 {
+    float:left;
+    display: inline;
+    margin-left: 14px;
+    padding:80px 0 10px 0;
+    border-bottom: 1px solid #000;
+    color: #76161f;
+    font-size: 24px;
+  }
+  .pic {
+    float: right;
+    height: 145px;
+    width:auto;
+  }
+}
