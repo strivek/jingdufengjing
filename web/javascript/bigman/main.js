@@ -1,16 +1,36 @@
 require(['jquery'], function ($) {
     $(function () {
-            var btn = $('.m-bigman .btn a');
+            var btn = $('.m-bigman .btn li');
             var box = $('.m-bigman .box');
-            //var len = box.length;
-            var len = btn.length;
-            //box.eq(0).css('visibility','visible');
-            /*btn.each(function (index) {
+            var len = box.length;
+            box.eq(0).css('visibility','visible');
+            btn.each(function (index) {
                 $(this).on('click', function () {
+                    var $this = $(this);
+                    var who = $this.data("who");
                     btn.removeClass('on').eq(index).addClass('on');
                     box.hide().eq(index).css('visibility','visible').fadeIn(500);
+                    /*var result = $.ajax({
+                        type: "GET",
+                        url: "json/data.json",
+                        data: { who: who }
+                    });
+                    result.done(function(data){
+                        var dataNews = '';
+                        $.each(data.news, function (idx, news) {
+                            dataNews += '<a class="link" target="_blank" href="' + news.link + '"><span>查看详情</span>' + news.title + '</a>';
+                        });
+                        //console.log(dataNews);
+                        $('.j-newsBox').html(dataNews);
+                        var dataImages = '';
+                        $.each(data.images, function (idx, images) {
+                            dataImages += '<a class="item" target="_blank" href="' + images.link + '"><img src="' + images.src + '" alt="img"/><div class="text-bg"></div><div class="text">' + images.text + '</div></a>';
+                        });
+                        //console.log(dataImages);
+                        $('.j-imagesBox').html(dataImages);
+                    })*/
                 })
-            });*/
+            });
             if (len == 1){
                 btn.css('display','none');
                 box.css({'left':'50%','margin-left':'-410px','width':'820px'});

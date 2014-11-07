@@ -246,13 +246,49 @@ body{background: url(../images/bg.png) repeat;}
         }
         .img{float: left;
           img{display:block;/*add 1107*/width: 176px; height:152px;}}
-        .des{float:left;padding:16px 8px 16px 16px;height:120px; width:304px;background: #f2f2f2;color:#313131;
+        /*.des{float:left;padding:16px 8px 16px 16px;height:120px; width:304px;background: #f2f2f2;color:#313131;
           .aTitle a{font-size:12px; font-family: "微软雅黑"; font-weight: bold; color:#313131;letter-spacing:2px;}
           .time{margin-top: 8px; text-align: right;font-size:10px;}
           .con{margin-top:6px;line-height: 18px;width: 304px; height: 50px; overflow: hidden;}
           &:hover{.aTitle a,.time,.con{color:#fff;} background: #75181e;}
+        }*/
+        .des{
+          float:left;
+          padding:16px 8px 16px 16px;
+          height:120px;
+          width:304px;
+          background: #f2f2f2;
+          color:#313131;
+          font-size: 12px;
+          overflow: hidden;
+          h2 {
+            a {
+              color:$title;
+              letter-spacing:2px;
+            }
+          }
+          h3 {
+            margin-top: 8px;
+            text-align: right;
+            font-weight: normal;
+          }
+          p {
+            margin-top:6px;
+            width: 304px;
+            text-indent: 24px;
+            line-height: 16px;
+          }
+          &:hover{
+            color: #fff;
+            background-color: $basered;
+            a {
+              color: #fff;
+            }
+          }
         }
-        &:hover{.aTitle a,.time,.con{color:#fff;} background: #75181e;.des{background: #75181e;}}/*jingxijun add 1107*/
+        &:hover{
+          .des{background: #75181e;}
+        }/*jingxijun add 1107*/
 
       }
         .stateList{margin-top:16px; margin-bottom: 100px;
