@@ -3,9 +3,8 @@ define(['jquery'], function ($) {
     $.fn.slideMore = function(options){
         var opts = $.extend({}, $.fn.slideMore.defaults, options),
             $this = $(this),
-            container = opts.container,
-            //itemLength = container.children().length,
-            itemLength = container.attr('data-count')?container.attr('data-count'):container.children().length,
+            container = $(opts.container),
+            itemLength = container.children().length,
             perLoad = opts.perLoad,
             initRow = opts.initRow,
             times = (itemLength / perLoad) - initRow + 1,
@@ -16,12 +15,30 @@ define(['jquery'], function ($) {
             initHeight = opts.initHeight,
             scrollTop;
 
+
+
         function init(){
-            if(itemLength < perLoad * initRow){
-                container.css('padding-bottom','32px');
+            if(opts.isCheckAjax){
+                $(document).on("pass",function(){
+                    itemLength = $(opts.container).children().length;
+                    times = (itemLength / perLoad) - initRow + 1;
+                    remainder = itemLength % perLoad;
+                    remHeight = opts.itemHeight * remainder;
+                    if(itemLength <= perLoad * initRow){
+                        $this.css('display','none');
+                        container.css({'overflow':'hidden','height':itemHeight * itemLength,'padding-bottom':'32px'});
+                    }else{
+                        $this.css('display','block');
+                        container.css({'overflow':'hidden','height':initHeight,'padding-bottom':'0'});
+                    }
+                });
             }else{
-                $this.css('display','block');
-                container.css({'overflow':'hidden','height':initHeight});
+                if(itemLength <= perLoad * initRow){
+                    container.css('padding-bottom','32px');
+                }else{
+                    $this.css('display','block');
+                    container.css({'overflow':'hidden','height':initHeight});
+                }
             }
         }
 
@@ -103,7 +120,8 @@ define(['jquery'], function ($) {
         initRow: 1,
         itemHeight: null,
         initHeight: null,
-        isBlock: true
+        isBlock: true,
+        isCheckAjax: false
 
     }
 
