@@ -12,7 +12,7 @@ require(['jquery'], function ($) {
                     var who = $this.data("who");
                     btn.removeClass('on').eq(index).addClass('on');
                     box.hide().eq(index).css('visibility','visible').fadeIn(500);
-                    var result = $.ajax({
+                    /*var result = $.ajax({
                         type: "GET",
                         url: "json/data.json",
                         data: { who: who }
@@ -34,7 +34,7 @@ require(['jquery'], function ($) {
 
                         console.log(newsLength);
                         console.log(imagesLength);
-                    })
+                    })*/
                 })
             });
             if (len == 1){
