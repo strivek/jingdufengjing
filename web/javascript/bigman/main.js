@@ -12,7 +12,7 @@ require(['jquery'], function ($) {
                     var who = $this.data("who");
                     btn.removeClass('on').eq(index).addClass('on');
                     box.hide().eq(index).css('visibility','visible').fadeIn(500);
-                    /*var result = $.ajax({
+                    var result = $.ajax({
                         type: "GET",
                         url: "json/data.json",
                         data: { who: who }
@@ -32,11 +32,28 @@ require(['jquery'], function ($) {
                         var newsLength = newsBox.children().length;
                         var imagesLength = imagesBox.children().length;
 
-                        console.log(newsLength);
-                        console.log(imagesLength);
-                    })*/
+                        newsBox.attr('data-count',newsLength);
+                        imagesBox.attr('data-count',imagesLength);
+
+                        $('.j-loadNews').slideMore({
+                            container: $('.j-newsBox'),
+                            perLoad: 5,
+                            itemHeight: 49,
+                            initHeight: 245
+                        });
+
+                        $('.j-loadImages').slideMore({
+                            container: $('.j-imagesBox'),
+                            perLoad: 3,
+                            itemHeight: 224,
+                            initHeight: 448,
+                            isBlock: false,
+                            initRow: 2
+                        });
+                    })
                 })
             });
+            btn.eq(0).trigger('click');
             if (len == 1){
                 btn.css('display','none');
                 box.css({'left':'50%','margin-left':'-410px','width':'820px'});
