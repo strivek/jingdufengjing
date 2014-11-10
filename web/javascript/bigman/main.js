@@ -2,6 +2,8 @@ require(['jquery'], function ($) {
     $(function () {
             var btn = $('.m-bigman .btn li');
             var box = $('.m-bigman .box');
+            var newsBox = $('.j-newsBox');
+            var imagesBox = $('.j-imagesBox');
             var len = box.length;
             box.eq(0).css('visibility','visible');
             btn.each(function (index) {
@@ -20,14 +22,18 @@ require(['jquery'], function ($) {
                         $.each(data.news, function (idx, news) {
                             dataNews += '<a class="link" target="_blank" href="' + news.link + '"><span>查看详情</span>' + news.title + '</a>';
                         });
-                        //console.log(dataNews);
-                        $('.j-newsBox').html(dataNews);
+                        newsBox.html(dataNews);
                         var dataImages = '';
                         $.each(data.images, function (idx, images) {
                             dataImages += '<a class="item" target="_blank" href="' + images.link + '"><img src="' + images.src + '" alt="img"/><div class="text-bg"></div><div class="text">' + images.text + '</div></a>';
                         });
-                        //console.log(dataImages);
-                        $('.j-imagesBox').html(dataImages);
+                        imagesBox.html(dataImages);
+
+                        var newsLength = newsBox.children().length;
+                        var imagesLength = imagesBox.children().length;
+
+                        console.log(newsLength);
+                        console.log(imagesLength);
                     })*/
                 })
             });
