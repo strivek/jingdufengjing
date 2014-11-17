@@ -70,10 +70,12 @@
     }
   }
   .contact-1 {
-    padding-left: 255px;
+   /* padding-left: 255px;*/
+    text-align: center;
     height: 20px;
     a {
-      float: left;
+     /* float: left;*/
+      display: inline-block;
       padding-left: 38px;
       height: 18px;
       line-height: 18px;
@@ -83,7 +85,8 @@
       background-repeat: no-repeat;
     }
     i {
-      float: left;
+      /*float: left;*/
+      display: inline-block;
       margin: 0 20px;
       width: 1px;
       height: 20px;
@@ -98,10 +101,13 @@
     }
   }
   .contact-2 {
-    padding: 32px 0 40px 163px;
+   /* padding: 32px 0 40px 163px;*/
+    padding: 32px 0 40px 0;
     height: 14px;
+    text-align: center;
     span {
-      float: left;
+      /*float: left;*/
+      display: inline-block;
       padding-left: 32px;
       height: 14px;
       line-height: 14px;
@@ -111,13 +117,15 @@
       background-repeat: no-repeat;
     }
     i {
-      float: left;
+      /*float: left;*/
+      display: inline-block;
       margin: 0 20px;
       width: 1px;
       height: 14px;
       background-color: #909090;
     }
     .pos {
+
       background-position: 0 -60px;
     }
     .fax {
