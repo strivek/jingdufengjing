@@ -101,31 +101,52 @@ body {
       }*/
 
     .mLink {
-      padding-top: 16px;
+      padding-top: 8px;
       ul {
         margin-left: -5px;
         li {
+          position: relative;
           float: left;
           display: inline;
           margin-top: 6px;
           margin-left: 5px;
-          text-align: center;
+          text-align:left;
           background-color: #f2f2f2;
           width: 200px;
           height: 45px;
           line-height: 45px;
-          a {
+          .bg{
             display: block;
-            padding: 0 3px;
+            width:2px;
+            background:#75181e;
+            height:45px;
+            transition: width 0.8s;
+            -moz-transition: width 0.8s; /* Firefox 4 */
+            -webkit-transition: width 0.8s; /* Safari 和 Chrome */
+            -o-transition: width 0.8s;
+          }
+          a {
+            padding-left: 20px;
+            position: absolute;
+            top:0;
+            left:0;
+            width: 100%;
+            -webkit-box-sizing: border-box;
+            -moz-border-sizing:border-box;
+            box-sizing: border-box;
+            display: block;
             font-size: 18px;
             color: $title;
             white-space: nowrap;
             text-overflow: ellipsis;
             overflow: hidden;
-            box-shadow: 1px 2px 2px #999;
+            transition: all 2s;
+            -moz-transition: all 1.4s; /* Firefox 4 */
+            -webkit-transition: all 1.4s; /* Safari 和 Chrome */
+            -o-transition:all 1.4s;
           }
           &:hover {
-            background-color: $basered;
+            .bg{width:100%;}
             a {
               color: #fff;
             }
@@ -194,7 +215,7 @@ body {
     background: #76161f;
   }
   .heart {
-    margin-top: 32px;
+    margin-top: 16px;
     &:after, &:before {
       display: table;
       content: "";
