@@ -1,0 +1,40 @@
+.g-bfcontent{
+  .img_box{
+    height:366px;
+    overflow: hidden;
+  }
+  .up_show {
+    i{
+    position: absolute;
+    top: 17px;
+    left: 533px;
+    width: 13px;
+    height: 13px;
+    background-image: url("../images/icons.png");
+    background-repeat: no-repeat;
+    background-position:  -5px -291px;
+  }
+    &:hover {
+      i {
+        background-position: -5px -306px;
+      }
+
+    }
+  }
+  .up_hide {
+    i {
+      background-position: -5px -260px
+    }
+    &:hover {
+      i {
+        background-image: url("../images/icons.png");
+        background-position:  -5px -275px;
+      }
+    }
+  }
+
+  .list_box{
+    height:245px;
+    overflow: hidden;
+  }
+}
