@@ -7,7 +7,6 @@ require.config({
 });
 
 require(['showLink']);
-require(['crs']);
 require(['Carousel']);
 require(['bigman']);
 require(['scrollbar']);
