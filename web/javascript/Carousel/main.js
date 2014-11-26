@@ -10,13 +10,18 @@ require(['jquery','Carousel/Carousel'], function ($) {
         $('.clist').flexslider({
             animation: "slide",
             animationLoop: true,
+            directionNav: true,
             itemWidth: 244,
             itemMargin: 16,
-            start: function(slider){
-                $('body').removeClass('loading');
-            }
+             slideshowSpeed: 4000
         });
     }
 
-
+ $("#crs").flexslider({
+     animation: "slide",
+     controlNav: true,
+     slideshowSpeed: 4000,
+     animationLoop: true,
+     asNavFor: '#slider'
+ });
 })
