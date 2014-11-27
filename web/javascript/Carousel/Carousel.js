@@ -1150,4 +1150,4 @@ define(['jquery'], function ($) {
     }
   };
 })(jQuery);
-})
+});

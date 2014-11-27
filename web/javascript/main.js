@@ -1,6 +1,6 @@
 require.config({
     baseUrl: "javascript",
-    packages: ["showLink","crs","bigman","scrollbar","Carousel","slideMore","showMore"],
+    packages: ["showLink","cars","bigman","scrollbar","Carousel","slideMore","showMore"],
     paths: {
         jquery: 'lib/jquery.min'
     }
@@ -12,3 +12,4 @@ require(['bigman']);
 require(['scrollbar']);
 require(['slideMore']);
 require(['showMore']);
+require(['cars']);

@@ -7,7 +7,7 @@ require(['jquery','Carousel/Carousel'], function ($) {
     }
     else {
         $(".peopleList").addClass("clist");
-        $('.clist').flexslider({
+       $('.clist').flexslider({
             animation: "slide",
             animationLoop: true,
             directionNav: true,
@@ -16,12 +16,4 @@ require(['jquery','Carousel/Carousel'], function ($) {
              slideshowSpeed: 4000
         });
     }
-
- $("#crs").flexslider({
-     animation: "slide",
-     controlNav: true,
-     slideshowSpeed: 4000,
-     animationLoop: true,
-     asNavFor: '#slider'
- });
-})
+});
