@@ -3,10 +3,10 @@ require(['jquery','cars/crs'], function ($) {
         navigationText: ["&lt;", "&gt;"],
         autoPlay: true,
         navigation: true, // Show next and prev buttons
-        slideSpeed: 400,
-        rewindSpeed: 500,
-        paginationSpeed: 800,
-        singleItem: true
-
+        slideSpeed: 500,
+        rewindSpeed: 0,
+        paginationSpeed: 1000,
+        singleItem: true,
+        rewindNav:true
     });
 })
